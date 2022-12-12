@@ -12,8 +12,16 @@ public class Ferry extends Ship{
         this.maxPassengers = maxPassengers;
     }
 
+    public int getMaxPassengers() {
+        return maxPassengers;
+    }
+
+    public void setMaxPassengers(int maxPassengers) {
+        this.maxPassengers = maxPassengers;
+    }
+
     @Override
     public String vesselDetails() {
-        return String.format("MaximumPassengers: [%d]",maxPassengers);
+        return String.format("MaxPassengers: [%d]", maxPassengers);
     }
 }
